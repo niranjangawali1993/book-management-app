@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### To Create a Docker Image
+
+docker build -t niranjang2/book-management-app .
+
+### To Create a running instance from image
+
+docker run -p 3000:80 -d niranjang2/book-management-app
+
+# Backend is BookManagement
