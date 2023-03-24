@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: book-mgmt-app-deploy
+  labels:
+    name: book-mgmt-app-deploy
+    app: book-management
+  namespace: development
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      name: book-mgmt-app-pod
+      app: book-management
+  template:
+    metadata:
+      name: book-mgmt-app-pod
+      labels:
+        name: book-mgmt-app-pod
+        app: book-management
+    spec:
+      containers:
+        - name: book-management-app-image
+          image: niranjang2/book-management-app:gke-react
+          envFrom:
+            - configMapRef:
+                name: app-config
+          ports:
+            - containerPort: 80

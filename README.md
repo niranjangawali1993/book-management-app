@@ -71,10 +71,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### To Create a Docker Image
 
-docker build -t niranjang2/book-management-app .
+docker build -t niranjang2/book-management-app:gke-react .
 
 ### To Create a running instance from image
 
-docker run -p 80:80 -d niranjang2/book-management-app
+docker run -p 80:80 -d niranjang2/book-management-app:gke-react
 
 # Backend is BookManagement

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+  name: app-config
+  labels:
+    name: app-config
+    app: book-management
+  namespace: development
+data:
+  REACT_APP_BASE_URL: 35.244.0.129

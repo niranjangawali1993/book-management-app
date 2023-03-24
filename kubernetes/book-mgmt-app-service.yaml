@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: book-mgmt-app-service
+  labels:
+    name: book-mgmt-app-service
+    app: book-management
+  namespace: development
+spec:
+  type: LoadBalancer
+  selector:
+    name: book-mgmt-app-pod
+    app: book-management
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80
