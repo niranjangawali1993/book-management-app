@@ -75,6 +75,6 @@ docker build -t niranjang2/book-management-app .
 
 ### To Create a running instance from image
 
-docker run -p 3000:80 -d niranjang2/book-management-app
+docker run -p 80:80 -d niranjang2/book-management-app
 
 # Backend is BookManagement

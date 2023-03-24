@@ -2,7 +2,7 @@
 FROM node:latest as node
 WORKDIR /app
 COPY . .
-RUN npm ci --no-audit
+RUN npm i
 RUN npm run build
 
 # NGINX configuration
