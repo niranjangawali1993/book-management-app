@@ -23,7 +23,7 @@ const BookList = (props) => {
 
   return (
     <div className='container'>
-      <h2 className='app-title'>Book Management App</h2>
+      <h2 className='app-title'>Book Management App 1</h2>
       <button
         className='btn btn-primary add-book-button'
         type='button'
