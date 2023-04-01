@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: book-management-app-image
-          image: niranjang2/book-management-app:gke-react
+          image: niranjang2/book-management-app:${{ github.sha }}
           envFrom:
             - configMapRef:
                 name: app-config
