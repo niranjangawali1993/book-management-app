@@ -22,8 +22,5 @@ spec:
       containers:
         - name: book-management-app-image
           image: niranjang2/book-management-app:DOCKER_IMG_TAG
-          envFrom:
-            - configMapRef:
-                name: app-config
           ports:
             - containerPort: 80
