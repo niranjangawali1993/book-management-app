@@ -71,7 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### To Create a Docker Image
 
-docker build -t niranjang2/book-management-app:gke-react .
+docker build --build-arg REACT_APP_BASE_URL=35.244.0.129 -t niranjang2/book-management-app:gke-react .
 
 ### To Create a running instance from image
 

@@ -23,7 +23,6 @@ const BookList = (props) => {
 
   return (
     <div className='container'>
-      <h4>IP - {process.env.REACT_APP_BASE_URL}</h4>
       <h2 className='app-title'>Book Management App</h2>
       <button
         className='btn btn-primary add-book-button'
