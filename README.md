@@ -77,4 +77,4 @@ docker build --build-arg REACT_APP_BASE_URL=35.244.0.129 -t niranjang2/book-mana
 
 docker run -p 80:80 -d niranjang2/book-management-app:gke-react
 
-# Backend is BookManagement
+# Backend is BookManagement Application
